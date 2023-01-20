@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<customUI onLoad="Ribbon_Load" xmlns="http://schemas.microsoft.com/office/2006/01/customui">
+    <ribbon>
+        <tabs>
+            <tab idMso="TabAddIns" label="Windward">
+                <group id="group1" label="Data">
+                    <menu id="dataSource" imageMso="DatabaseCopyDatabaseFile" label="Data Source" size="large" />
+                    <button id="inputParameters" imageMso="ExchangeFolder" onAction="inputParameters_Click" label="Input Parameters" size="large" />
+                </group>
+                <group id="group2" label="Tags">
+                    <dynamicMenu id="tags" imageMso="TableOfContentsAddTextGallery" label="Tags" size="large" tag="Name" itemSize="large" getContent="tags_GetContent" />
+                </group>
+                <group id="group3" label="Output">
+                    <dynamicMenu id="output" imageMso="AdpOutputOperationsTableRemove" label="Output" size="large" getContent="output_GetContent" />
+                    <button id="button4" imageMso="Help" label="Help" size="large" />
+                </group>
+            </tab>
+        </tabs>
+    </ribbon>
+</customUI>
